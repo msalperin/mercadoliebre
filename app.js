@@ -8,7 +8,7 @@ const publiPath = path.resolve(__dirname,'./public')
 
 app.use(express.static(publiPath));
 
-app.listen(3030, () => {
+app.listen(process.env.PORT || 3000, function () {
     console.log('Esto fue exitoso');
 })
 
