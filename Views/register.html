@@ -4,17 +4,15 @@
     <meta charset="UTF-8" />
     <title>Bienvenidxs a MercadoLiebre</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
+    
     <header>
       <div class="top-header">
         <div class="logo">
@@ -39,8 +37,7 @@
         </ul>
         <ul>
           <li>
-            <a href="/register"
-              >Creá tu cuenta <i class="far fa-id-card"></i
+            <a href="/register">Creá tu cuenta <i class="far fa-id-card"></i
             ></a>
           </li>
           <li>
@@ -59,39 +56,54 @@
 
     <section class="accesoUsuario">
       <form action="/" method="POST">
-        <label for="nombre">Nombre:</label><br />
-        <input
-          type="text"
-          name="nombre"
-          id="nombre"
-          placeholder="Ingrese nombrey apellido"
-        />
-        <br />
-        <label for="usuario">Nombre de Usuario:</label>
-        <input type="text" name="usuario" id="usuario" placeholder="Usuario" />
-        <br />
-        <label for="date">Fecha de Nacimiento:</label>
-        <input type="date" name="date" id="date" placeholder="Nacimiento" />
-        <br />
-        <label for="domicilio">Domicilio</label>
-        <input
-          type="domicilio"
-          name="date"
-          id="domicilio"
-          placeholder="Domicilio"
-        />
-        <br />
-
-        <section> <p>Perfil del Comprador</p>
-
-          <label for="profile">Comprador </label>
-          <input type="radio" name="profile" id="comprador" />
-
-          <label for="profile">Vendedor </label>
-          <input type="radio" name="profile" id="vendedor" />
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" name="nombre" id="nombre" minlegth="4" placeholder="Ingrese nombre y apellido"/><br>
         
-        </section>
+        <label for="usuario">Nombre de Usuario:</label><br>
+        <input type="text" name="usuario" id="usuario" placeholder="Usuario" /> <br>
+        
+        <label for="date">Fecha de Nacimiento:</label><br>
+        <input type="date" name="date" id="date" placeholder="Nacimiento" />
+        <br>
+        <label for="domicilio">Domicilio</label> <br>
+        <input type="domicilio"name="date" id="domicilio" placeholder="Domicilio"/>
+        <br>
+        
+        <p>Perfil del Comprador:</p> <br>
+        <section id="Perfil">
 
+          <label for="profile"> Comprador  </label>
+          <input type="radio" name="profile" value="comprador"/>
+
+          <label for="profile">Vendedor    </label>
+          <input type="radio" name="profile" value="vendedor" />
+          
+                           
+        </section><br>
+
+        <section><p>Categorias de interes:</p><br>
+          
+          <label for="interes">Electro</label>
+          <input type="checkbox" name="interes" id="Electro" /><br>
+          <label for="interes">Moda</label>
+          <input type="checkbox" name="interes" id="Moda" /><br>
+          <label for="interes">Hogar</label>
+          <input type="checkbox" name="interes" id="Moda" /><br>
+          <label for="interes">Jugeteria</label>
+          <input type="checkbox" name="interes" id="Jugeteria"/><br>
+          <label for="interes">Vida Sana</label> 
+          <input type="checkbox" name="interes" id="Vida Sana"/><br>
+       
+        </section>
+          <br> 
+          <label for="foto">Cargar Foto:</label><br>
+          <input type="file" name="foto" id="foto" accept=".jpg"> <br>
+          <br>
+        
+        <div class="botones">
+          <button type="reset">Resetear</button>
+          <button type="submit">Enviar</button>
+        </div>
         
       </form>
 

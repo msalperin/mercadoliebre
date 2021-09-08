@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
@@ -15,23 +16,31 @@ h3{
 p{
     font-size: 12px;
 }
-div.top-header{
-    padding: 5%;
-}
+/*header*/
 
 header{
     background-color: #EAC926;
 }
-
-header div.logo{
-    width: 50%;
+div.top-header{
+    padding: 5%;
+  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 header div.logo{
-    padding: 10px;
+    width: 80%;
+
+    margin: auto;
+   
+    
 }
+
 header nav{
     font-size: 12px;
+    margin-left: 5px;
+    
 }
 
 header ul li{
@@ -43,18 +52,34 @@ header ul li a{
     color: #000;
 }
 
+header .form {
+    margin-top: 5px;
+   
+    width: 100%;
+    display: flex;
+    
+}
+
 header .form .input{
     background-color: #FFF;
     border: 1px solid #000;
+    width: 90%;
     outline: none;
     color: #666;
     padding: 2px;
+
 }
 header .form .submit{
     background-color: #FFF;
     border: 1px solid #000;
     color: #666;
     width: 10%;
+}
+
+.fa-search{
+    text-align: center;
+    padding-top: 3px;
+    padding-left: 4px;
 }
 
 header div.top-header p{
@@ -72,11 +97,13 @@ div.burger-menu i{
     border-radius: 5px;
     color: #FFF;
     font-size: 20px;
-    height: 40px;
+    height: 30px;
     margin: 10px 0px 20px 0px;
     padding: 10px;
-    width: 40px;
+    width: 30px;
 }
+
+/*body*/
 
 .price{
     font-size: 18px;
@@ -111,7 +138,6 @@ main{
 .products{
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .articulo {
@@ -134,17 +160,6 @@ main section article i,
     color: #39b54a;
 }
 
-
-/*main section article i{
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-}*/
-
 main section article i{
     display: block;
     font-size: 16px;
@@ -157,7 +172,7 @@ main section article i{
     position: relative;
     right: 20px;
     top: -15px;
-    }
+}
 
 main section h3{
     margin: 20px 0px;
@@ -168,6 +183,55 @@ article div.main-article{
     border-top: 1px solid #ebebeb;
     padding: 15px;
 }
+
+
+/* formulario */
+
+form p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 3vh; 
+}
+form{
+    width: 90%;
+    margin: auto;
+    margin-top: 1vh;
+   
+}
+form label {
+    margin-top: 3vh;
+    font-weight: bold;       
+}
+
+#nombre,#usuario,#date,#domicilio{
+ width: 90%;    
+}
+
+#Perfil {
+    font-weight: normal;
+}
+
+form button {
+    background-color: #0044AA;
+    color: white;    
+    padding: 10px;
+}
+
+
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    margin: auto;
+    justify-content: center;
+}
+
+
+
+
+    
+
+
 
 
 
