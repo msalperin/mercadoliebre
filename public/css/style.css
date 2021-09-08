@@ -103,7 +103,24 @@ div.burger-menu i{
     width: 30px;
 }
 
+section.banner img{
+    width: 100%;
+}
 /*body*/
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+}
+.articulo {
+    width: 98%;
+}
+
 
 .price{
     font-size: 18px;
@@ -122,32 +139,24 @@ h3,
 }
 
 .description{
-    display: none;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
-section.banner img{
+
+article div.main-article{
     width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    border: 1px solid salmon;
 }
 
-main{
-    width: 90%;
-    margin: 0 auto;
-}
-
-.products{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.articulo {
-    width: 98%;
-}
-
-main section article{
-    
+main section article{   
     background-color: #fff;    
     margin: 10px 0px;
+    border: 1px solid salmon;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 
 }
 
@@ -160,8 +169,7 @@ main section article i,
     color: #39b54a;
 }
 
-main section article i{
-    display: block;
+main section article i{    
     font-size: 16px;
     padding: 5px;
     width: 30px;
@@ -170,19 +178,17 @@ main section article i{
     background-color: #FFF;
     border-radius: 50%;
     position: relative;
-    right: 20px;
-    top: -15px;
+    right: 1px;
+    left: 220px;
+    top: -25px;
+
 }
 
 main section h3{
     margin: 20px 0px;
 }
 
-article div.main-article{
-    width: 100%;
-    border-top: 1px solid #ebebeb;
-    padding: 15px;
-}
+
 
 
 /* formulario */
@@ -228,9 +234,38 @@ form button {
 
 
 
+/*footer*/
 
-    
+footer{
+    background-color: white;
+    text-align: center;
+    margin-top: 20px;
+    width: 95%;
+    margin: auto;
+}
 
+footer h5 p{
+    color: #666;
+}
+.fa-credit-card , .fa-gift , .fa-user-shield{
+    color: #03264C;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+/*
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;*/
+
+/*Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px*/
 
 
 
@@ -238,7 +273,7 @@ form button {
 
 @media (min-width: 361px){
     main section article .description{
-        display: block;
+      
     }
 
     main section article{
