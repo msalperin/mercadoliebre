@@ -23,24 +23,30 @@ header{
 }
 div.top-header{
     padding: 5%;
-  
+    width: 95%;
+    margin: auto; 
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    border: 1px solid salmon;
 }
 
 header div.logo{
-    width: 80%;
-
-    margin: auto;
-   
-    
+    width: 50%;
+    border: 1px solid salmon;   
 }
 
 header nav{
     font-size: 12px;
     margin-left: 5px;
-    
+}
+
+.siteMenu{
+    display: none;
+}
+
+.loginNavbar {
+    display: none;
 }
 
 header ul li{
@@ -53,32 +59,40 @@ header ul li a{
 }
 
 header .form {
-    margin-top: 5px;
-   
-    width: 100%;
+    margin-top: 5px;  
+    width: 50%;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1px solid salmon;
+    height: 10px;
     
 }
 
 header .form .input{
     background-color: #FFF;
-    border: 1px solid #000;
-    width: 90%;
+    border: none;
+    width: 85%;
     outline: none;
     color: #666;
     padding: 2px;
-
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 header .form .submit{
     background-color: #FFF;
-    border: 1px solid #000;
+    border: none;
     color: #666;
-    width: 10%;
+    width: 15%;
+    text-align: center;
+    
 }
 
 .fa-search{
     text-align: center;
-    padding-top: 3px;
+    padding-top: 5px;
     padding-left: 4px;
 }
 
@@ -118,9 +132,8 @@ main{
     flex-wrap: wrap;
 }
 .articulo {
-    width: 98%;
+    width: 98%;    
 }
-
 
 .price{
     font-size: 18px;
@@ -133,6 +146,13 @@ main{
     font-weight: normal;
 }
 
+.precioDescuento{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1px solid salmon;
+}
+
 h3,
 .description{
     color: #666;
@@ -140,6 +160,7 @@ h3,
 
 .description{
     margin-top: 10px;
+    display: none;
 }
 
 
@@ -147,21 +168,21 @@ article div.main-article{
     width: 100%;
     border-top: 1px solid #ebebeb;
     padding: 15px;
-    border: 1px solid salmon;
-}
+    position: relative;
+    border-top: 2px solid grey;
+  }
 
 main section article{   
     background-color: #fff;    
     margin: 10px 0px;
-    border: 1px solid salmon;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-
+    box-shadow: 0px 0px 10px rgb(100, 100, 100)
 }
 
 main section article img{
-    width: 100%;
+    width: 100%;    
 }
 
 main section article i,
@@ -169,7 +190,9 @@ main section article i,
     color: #39b54a;
 }
 
-main section article i{    
+
+.fa-truck {
+    display: block;
     font-size: 16px;
     padding: 5px;
     width: 30px;
@@ -177,18 +200,15 @@ main section article i{
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
-    position: relative;
-    right: 1px;
-    left: 220px;
-    top: -25px;
-
+    position: absolute;
+    right: 20px;
+    left: 240px;
+    top: -15px;
 }
 
 main section h3{
     margin: 20px 0px;
 }
-
-
 
 
 /* formulario */
@@ -209,7 +229,7 @@ form label {
     font-weight: bold;       
 }
 
-#nombre,#usuario,#date,#domicilio{
+#nombre,#usuario,#date,#domicilio,#password{
  width: 90%;    
 }
 
@@ -221,6 +241,8 @@ form button {
     background-color: #0044AA;
     color: white;    
     padding: 10px;
+    width: 90%;
+    border: none;
 }
 
 
@@ -231,8 +253,12 @@ form button {
     margin: auto;
     justify-content: center;
 }
+/*formulario acceso*/
 
-
+.loginUsuario{
+    width: 90%;
+    margin: auto;
+}
 
 /*footer*/
 
@@ -247,6 +273,7 @@ footer{
 footer h5 p{
     color: #666;
 }
+
 .fa-credit-card , .fa-gift , .fa-user-shield{
     color: #03264C;
     font-size: 25px;
@@ -268,32 +295,170 @@ Descuentos: 16px
 Descripciones: 16px*/
 
 
+/*table*/
+@media (min-width: 390px){
+
+ /*header*/
+
+ nav {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5px;
+    padding: 10px;
+}
+nav ul li{
+    margin-left: 4px;
+}
+.siteMenu{
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.loginNavbar {
+    display: inline-block;
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+}
 
 
+div.burger-menu{
+    text-align: center;
+    display: none;
+}
 
-@media (min-width: 361px){
-    main section article .description{
-      
-    }
 
-    main section article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-  
-    }
+header div.logo{
+    width: 30%;
+    border: 1px solid salmon;   
+}
 
-    
+header .form {
+    margin-top: 5px;
+    margin-left: 3%;  
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 1px solid salmon;
+    height: 10px;
     
 }
 
-@media (min-width: 769px){
-    main section article {
-        width: 48%;
+.cuotas {
+    border: 1px solid salmon;
+    width: 30%;
+}
+
+    .products{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border: 2px solid salmon;
+
     }
+    
+    .articulo {
+        border: 2px solid salmon;
+        width: 45%;
+        margin: auto;
+         
+    }
+
+    .description{
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    
+}
+
+/*desktop*/
+
+@media (min-width: 769px){
+    /*header*/
+
+    nav {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 5px;
+        padding: 10px;
+    }
+    nav ul li{
+        margin-left: 4px;
+    }
+    .siteMenu{
+        display: inline-block;
+        display: flex;
+        flex-direction: row;
+
+    }
+    
+    .loginNavbar {
+        display: inline-block;
+        display: inline-block;
+        display: flex;
+        flex-direction: row;
+    }
+
+    
+    div.burger-menu{
+        text-align: center;
+        display: none;
+    }
+
+
+    header div.logo{
+        width: 30%;
+        border: 1px solid salmon;   
+    }
+
+    header .form {
+        margin-top: 5px;
+        margin-left: 3%;  
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border: 1px solid salmon;
+        height: 10px;
+        
+    }
+
+    .cuotas {
+        border: 1px solid salmon;
+        margin-left: 15px;
+    }
+
+    .products{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border: 2px solid rgb(49, 45, 44);
+
+    }
+    
+    .articulo {
+        border: 2px solid salmon;
+        width: 20%;
+        margin: auto;
+         
+    }
+
+  
+
 }
 
 @media (min-width:1200px) {
-    main section article{
-        width: 23%;
-        margin: 1%;
-    }
+    
 }
