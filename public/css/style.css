@@ -28,12 +28,12 @@ div.top-header{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    border: 1px solid salmon;
+
 }
 
 header div.logo{
     width: 50%;
-    border: 1px solid salmon;   
+      
 }
 
 header nav{
@@ -64,7 +64,7 @@ header .form {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    border: 1px solid salmon;
+    
     height: 10px;
     
 }
@@ -150,7 +150,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    border: 1px solid salmon;
+    
 }
 
 h3,
@@ -186,7 +186,7 @@ main section article{
 }
 
 main section article:hover{
-box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 main section article img{
     width: 100%;    
@@ -208,9 +208,11 @@ main section article i,
     background-color: #FFF;
     border-radius: 50%;
     position: absolute;
-    right: 20px;
+    right: 10%;
+    bottom: 70%;
+    /*right: 20px;
     left: 240px;
-    top: -15px;
+    top: -15px;*/
 }
 
 main section h3{
@@ -346,7 +348,7 @@ div.burger-menu{
 
 header div.logo{
     width: 30%;
-    border: 1px solid salmon;   
+    
 }
 
 header .form {
@@ -356,13 +358,13 @@ header .form {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    border: 1px solid salmon;
+   
     height: 10px;
     
 }
 
 .cuotas {
-    border: 1px solid salmon;
+   
     width: 30%;
 }
 
@@ -371,14 +373,15 @@ header .form {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        border: 2px solid salmon;
+        
 
     }
     
     .articulo {
-        border: 2px solid salmon;
+        
         width: 45%;
         margin: auto;
+        margin-top: 5%;
          
     }
 
@@ -430,7 +433,7 @@ header .form {
 
     header div.logo{
         width: 30%;
-        border: 1px solid salmon;   
+          
     }
 
     header .form {
@@ -440,13 +443,13 @@ header .form {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        border: 1px solid salmon;
+        
         height: 10px;
         
     }
 
     .cuotas {
-        border: 1px solid salmon;
+      
         margin-left: 15px;
     }
 
@@ -455,14 +458,16 @@ header .form {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        border: 2px solid rgb(49, 45, 44);
+        
+       
 
     }
     
     .articulo {
-        border: 2px solid salmon;
+        
         width: 20%;
         margin: auto;
+        margin-top: 10%;
          
     }
 
